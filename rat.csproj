@@ -13,7 +13,7 @@
     <Authors>UltiRequiem</Authors>
     <Company>ultirequiem.com</Company>
 
-    <license type="expression">BSD-2-Clause OR MIT</license>
+    <license>license</license>
   </PropertyGroup>
 
   <ItemGroup>

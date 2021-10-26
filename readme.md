@@ -1,6 +1,6 @@
 # Rat
 
-🐀 A mini [`cat`](<https://en.wikipedia.org/wiki/Cat_(Unix)>) clone.
+A mini [`cat`](<https://en.wikipedia.org/wiki/Cat_(Unix)>) clone.
 
 ## Install
 
@@ -30,7 +30,7 @@ At the moment this options are supported:
 
 - `--number`: number all output lines
 
--  `--show-ends`: Display $ at the end of each line
+- `--show-ends`: Display $ at the end of each line
 
 ## License
 

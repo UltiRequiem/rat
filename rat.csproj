@@ -3,6 +3,9 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
 
+    <PlatformTarget>AnyCpu</PlatformTarget>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>rat</ToolCommandName>
     <PackageId>rat</PackageId>
@@ -14,6 +17,10 @@
     <Company>ultirequiem.com</Company>
 
     <license>license</license>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Description>A minimal cat clone.</Description>
   </PropertyGroup>
 
   <ItemGroup>

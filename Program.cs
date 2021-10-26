@@ -12,6 +12,14 @@ namespace rat
         static void Main(string[] args, bool number = false, bool showEnds = false)
         {
 
+            if (args.Length == 0)
+            {
+                while (true)
+                {
+                    Console.WriteLine(Console.ReadLine());
+                }
+            }
+
             string text = "";
 
             foreach (string file in args)

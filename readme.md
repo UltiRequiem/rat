@@ -1,6 +1,6 @@
 # Rat
 
-A mini [`cat`](<https://en.wikipedia.org/wiki/Cat_(Unix)>) clone.
+A [`cat`](https://en.wikipedia.org/wiki/Cat_(Unix)) clone.
 
 ## Install
 
@@ -18,20 +18,38 @@ Turbo C# Compiler, you can try the
 
 ```sh
 git clone https://github.com/UltiRequiem/rat && cd rat && git checkout 423c4b7;
-mcs Program.cs -out:rat && sudo mv rat /usr/bin/rat # Or somewhere else in the $PATH
+mcs Program.cs -out:rat && sudo mv rat /usr/bin/rat # Or somewhere else in $PATH
 ```
 
 ## Usage
+
+If you dont pass arguments it will print the stdin, just as `cat`.
+
+```
+rat
+```
+
+Using the `--number` flag:
 
 ```sh
 rat --number Program.cs
 ```
 
+Using the `--show-ends` flag:
+
+```sh
+rat --show-ends Program.cs
+```
+
 At the moment this options are supported:
 
-- `--number`: number all output lines
+- `--number`: Number all output lines
 
-- `--show-ends`: Display $ at the end of each line
+- `--show-ends`: Display "$" at the end of each line
+
+## Note
+
+This was the first project I did in `C#`, practically a "Hello world".
 
 ## License
 

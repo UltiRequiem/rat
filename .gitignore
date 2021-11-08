@@ -1,6 +1,5 @@
-*.suo
-*.user
-bin
-obj
-packages
-.nuget/
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/

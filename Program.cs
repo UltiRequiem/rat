@@ -4,14 +4,13 @@ using System.IO;
 
 namespace rat
 {
-    class Program
+    internal static class Program
     {
         /// <param name="args">The files to read</param>
         /// <param name="number">Print Numbers?</param>
         /// <param name="showEnds">Put an "$" at the End?</param>
-        static void Main(string[] args, bool number = false, bool showEnds = false)
+        private static void Main(string[] args, bool number = false, bool showEnds = false)
         {
-
             if (args.Length == 0)
             {
                 while (true)
@@ -36,27 +35,25 @@ namespace rat
             }
 
 
-
             if (number)
             {
-
-                string[] splitedText = text.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+                var splitText = text.Split(new[] {Environment.NewLine}, StringSplitOptions.None);
                 text = "";
 
-                for (int i = 0; i < splitedText.Length - 1; i++)
+                for (var i = 0; i < splitText.Length - 1; i++)
                 {
-                    text += $"  {i}   {splitedText[i]}\n";
+                    text += $"  {i}   {splitText[i]}\n";
                 }
             }
 
             if (showEnds)
             {
-                string[] splitedText = text.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+                var splitText = text.Split(new[] {Environment.NewLine}, StringSplitOptions.None);
                 text = "";
 
-                for (int i = 0; i < splitedText.Length - 1; i++)
+                for (var i = 0; i < splitText.Length - 1; i++)
                 {
-                    text += $"{splitedText[i]}$ \n";
+                    text += $"{splitText[i]}$ \n";
                 }
             }
 

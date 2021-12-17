@@ -2,10 +2,10 @@
 {
     /// <param name="args">The files to read</param>
     /// <param name="number">Print Numbers?</param>
-    /// <param name="ShowEnds">Put an "$" at the End?</param>
-    private static void Main(string[] args, bool number = false, bool ShowEnds = false)
+    /// <param name="showEnds">Put an "$" at the End?</param>
+    private static void Main(string[] args, bool number = false, bool showEnds = false)
     {
-        if (args.Length == 0) PrintFromSTDIN();
+        if (args.Length == 0) PrintFromSTDIN(number, showEnds);
 
         string text = "";
 
@@ -22,18 +22,22 @@
             }
         }
 
-
-        if (number) text = AddNumbers(text);
-
-        if (ShowEnds) text = AddEnds(text);
-
-        Console.Write(text);
+        Console.Write(ParseString(text, number, showEnds));
     }
 
-    public static void PrintFromSTDIN()
+    public static string ParseString(string text, bool number, bool showEnds)
+    {
+        if (number) text = AddNumbers(text);
+        if (showEnds) text = AddEnds(text);
+        return text;
+    }
+
+
+    public static void PrintFromSTDIN(bool number, bool showEnds)
     {
         while (true) Console.WriteLine(Console.ReadLine());
     }
+
 
     public static string AddEnds(string text)
     {

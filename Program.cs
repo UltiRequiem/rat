@@ -45,10 +45,7 @@
 
         text = "";
 
-        for (var i = 0; i < splitText.Length - 1; i++)
-        {
-            text += $"{splitText[i]}$ \n";
-        }
+        for (var i = 0; i < splitText.Length - 1; i++) text += $"{splitText[i]}$ \n";
 
         return text;
     }
@@ -59,10 +56,7 @@
 
         text = "";
 
-        for (var i = 0; i < splitText.Length - 1; i++)
-        {
-            text += $"  {i}   {splitText[i]}\n";
-        }
+        for (var i = 0; i < splitText.Length - 1; i++) text += $"  {i}   {splitText[i]}\n";
 
         return text;
     }

@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageId>rat</PackageId>
-    <Descripton>A cat clone</Descripton>
+    <Description>A cat clone</Description>
     <RepositoryUrl>https://github.com/UltiRequiem/rat</RepositoryUrl>
     <Version>1.2.1</Version>
     <Authors>UltiRequiem</Authors>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
